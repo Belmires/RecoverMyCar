@@ -11,9 +11,14 @@ class DataBaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
 
     // create table sql query
     private val CREATE_USER_TABLE = ("CREATE TABLE " + TABLE_USER + "("
-            + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER_NAME + " TEXT,"
-            + COLUMN_USER_NAME_COMPLET + " TEXT," + COLUMN_USER_CPF + " TEXT,"
-            + COLUMN_USER_PASSWORD + " TEXT" + COLUMN_USER_EMAIL + " TEXT," + COLUMN_USER_SEXO + " TEXT," + COLUMN_USER_PLACA + " TEXT" +")")
+            + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + COLUMN_USER_NAME + " TEXT,"
+            + COLUMN_USER_NAME_COMPLET + " TEXT,"
+            + COLUMN_USER_CPF + " TEXT,"
+            + COLUMN_USER_PASSWORD + " TEXT,"
+            + COLUMN_USER_EMAIL + " TEXT,"
+            + COLUMN_USER_SEXO + " TEXT,"
+            + COLUMN_USER_PLACA + " TEXT" +")")
 
     // drop table sql query
     private val DROP_USER_TABLE = "DROP TABLE IF EXISTS $TABLE_USER"
