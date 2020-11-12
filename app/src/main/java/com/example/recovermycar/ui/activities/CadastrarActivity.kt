@@ -22,11 +22,11 @@ class CadastrarActivity : AppCompatActivity() {
         initObjects()
 
         radioGroup.setOnCheckedChangeListener { group, checkedId ->
-            if (checkedId == R.id.radioButton) {
-                sexo = radioButton.text.toString()
+            if (checkedId == R.id.btnRadioMasc) {
+                sexo = btnRadioMasc.text.toString()
             }
-            if (checkedId == R.id.radioButton2) {
-                sexo = radioButton2.text.toString()
+            if (checkedId == R.id.btnRadioFem) {
+                sexo = btnRadioFem.text.toString()
             }
         }
 
